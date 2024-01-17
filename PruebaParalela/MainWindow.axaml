@@ -1,0 +1,97 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Width="800"
+        Height="400"
+        CanResize="False"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="PruebaParalela.MainWindow"
+        Title="PruebaParalela"
+        >
+    
+    
+    <StackPanel Orientation="Vertical"  Background="Khaki" >
+        <StackPanel Orientation="Horizontal" Margin="20">
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Column="0" Grid.Row="0">
+                        <Label Margin="0 ,10,20,0">Numero: </Label>
+                       
+                    </Grid>      
+                    <Grid Grid.Column="0" Grid.Row="1">
+                        <Label Margin="0 ,10,20,0">Precio: </Label>
+                        
+                    </Grid>  
+                    <Grid Grid.Column="0" Grid.Row="2">
+                        <Label Margin="0 ,10,20,0">Profesional: </Label>
+                       
+                    </Grid>  
+                    <Grid Grid.Column="0" Grid.Row="3">
+                        <Label Margin="0 ,10,20,0">Calidad: </Label>
+                    </Grid>  
+                    <Grid Grid.Column="0" Grid.Row="4">
+                        <Label Margin="0 ,10,20,0">Marca: </Label>
+                    </Grid>  
+                  
+                    
+                    <Grid Grid.Column="1" Grid.Row="0">
+                        <TextBox Name="txtNumero" Margin="0 ,10,0,0"></TextBox>
+                       
+                    </Grid>      
+                    <Grid Grid.Column="1" Grid.Row="1">
+                        <TextBox Name="txtPrecio" Margin="0 ,10,0,0"></TextBox>
+                        
+                    </Grid>  
+                    <Grid Grid.Column="1" Grid.Row="2">
+                        <TextBox Name="txtProfesional" Margin="0 ,10,0,0"></TextBox>
+                       
+                    </Grid>  
+                    <Grid  Grid.Column="1" Grid.Row="3">
+                        
+                        <TextBox Name="txtCalidad" Margin="0 ,10,0,0"></TextBox>
+                    </Grid>  
+                    <Grid Grid.Column="1" Grid.Row="4">
+                       
+                        <TextBox Name="txtMarca" Margin="0 ,10,0,0"></TextBox>
+                    </Grid>  
+                    
+                  
+                    
+                   </Grid>
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Vertical">
+                <Image Name="img"  Width="200" Height="150" Margin="200,0,0,0" Source="C:\Users\Cala\RiderProjects\PruebaParalela\PruebaParalela\Captura de pantalla 2023-11-14 153805.png"></Image>
+                <Button Name="btnCargar"  Click="BtnCargar_OnClick" Margin="240,0,0,0" >Cargar Archivo</Button>
+            </StackPanel>
+        </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="0,50,0,0">
+        <Button Name="btnRetroceder" Click="BtnRetroceder_OnClick" Margin="40,0,0,0">Retroceder</Button>
+        <Button Name="btnAvanzar" Click="BtnAvanzar_OnClick" Margin="40,0,0,0">Avanzar</Button>
+        <Button Name="btnEliminar" Click="BtnEliminar_OnClick" Margin="40,0,0,0">Eliminar</Button>
+        <Button Name="btnNuevo" Click="BtnNuevo_OnClick" Margin="40,0,0,0">Nuevo</Button>
+    </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Name="btnOk" Click="BtnOk_OnClick">OK</Button>
+        </StackPanel>
+        
+    </StackPanel>
+    
+</Window>
